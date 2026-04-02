@@ -1,11 +1,11 @@
-# 🌍 Map Coloring using CSP (Australia)
+# Map Coloring using CSP (Australia)
 
-## 📌 Overview
+## Overview
 This project solves the Map Coloring Problem using Constraint Satisfaction Problem (CSP) techniques in Python. The goal is to assign colors to regions such that no two adjacent regions share the same color.
 
 ---
 
-## 🗺️ Problem Description
+## Problem Description
 We consider the map of Australia with the following states:
 
 - WA (Western Australia)
@@ -23,7 +23,7 @@ Each state must be colored using:
 
 ---
 
-## 🔗 Adjacency Constraints
+## Adjacency Constraints
 
 - WA → NT, SA  
 - NT → WA, SA, Queensland  
@@ -35,7 +35,7 @@ Each state must be colored using:
 
 ---
 
-## ⚙️ Approach
+## Approach
 
 This solution uses the Backtracking Algorithm:
 
@@ -47,20 +47,4 @@ This solution uses the Backtracking Algorithm:
 6. If not, backtrack and try another color  
 7. Repeat until all states are assigned  
 
----
 
-## 🧠 Functions Used
-
-- **is_valid()** → Checks if a color assignment is valid  
-- **solve_map_coloring()** → Uses backtracking to find a solution  
-
----
-
-## ▶️ How to Run
-
-1. Save the code in a file named `map_coloring.py`  
-2. Run:
-
-```
-python map_coloring.py
-```
